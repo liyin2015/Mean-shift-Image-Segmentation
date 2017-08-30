@@ -4,12 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/liyin/edison_source/segm/RAList.cpp" "/home/liyin/edison_source/segm/build/CMakeFiles/dependencies.dir/RAList.cpp.o"
-  "/home/liyin/edison_source/segm/loadImage.cpp" "/home/liyin/edison_source/segm/build/CMakeFiles/dependencies.dir/loadImage.cpp.o"
-  "/home/liyin/edison_source/segm/ms.cpp" "/home/liyin/edison_source/segm/build/CMakeFiles/dependencies.dir/ms.cpp.o"
-  "/home/liyin/edison_source/segm/rlist.cpp" "/home/liyin/edison_source/segm/build/CMakeFiles/dependencies.dir/rlist.cpp.o"
+  "/Users/yinli/Documents/experiments_crf/edison_source/segm/RAList.cpp" "/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/dependencies.dir/RAList.o"
+  "/Users/yinli/Documents/experiments_crf/edison_source/segm/call_segment.cpp" "/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/dependencies.dir/call_segment.o"
+  "/Users/yinli/Documents/experiments_crf/edison_source/segm/dir_segmentation.cpp" "/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/dependencies.dir/dir_segmentation.o"
+  "/Users/yinli/Documents/experiments_crf/edison_source/segm/loadImage.cpp" "/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/dependencies.dir/loadImage.o"
+  "/Users/yinli/Documents/experiments_crf/edison_source/segm/ms.cpp" "/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/dependencies.dir/ms.o"
+  "/Users/yinli/Documents/experiments_crf/edison_source/segm/rlist.cpp" "/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/dependencies.dir/rlist.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

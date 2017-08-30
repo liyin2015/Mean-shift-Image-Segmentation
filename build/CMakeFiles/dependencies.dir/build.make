@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/liyin/anaconda/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.6.2/bin/cmake
 
 # The command to remove a file.
-RM = /home/liyin/anaconda/bin/cmake -E remove -f
+RM = /usr/local/Cellar/cmake/3.6.2/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liyin/edison_source/segm
+CMAKE_SOURCE_DIR = /Users/yinli/Documents/experiments_crf/edison_source/segm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liyin/edison_source/segm/build
+CMAKE_BINARY_DIR = /Users/yinli/Documents/experiments_crf/edison_source/segm/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dependencies.dir/depend.make
@@ -57,119 +57,171 @@ include CMakeFiles/dependencies.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/dependencies.dir/flags.make
 
-CMakeFiles/dependencies.dir/ms.cpp.o: CMakeFiles/dependencies.dir/flags.make
-CMakeFiles/dependencies.dir/ms.cpp.o: ../ms.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyin/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dependencies.dir/ms.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dependencies.dir/ms.cpp.o -c /home/liyin/edison_source/segm/ms.cpp
+CMakeFiles/dependencies.dir/ms.o: CMakeFiles/dependencies.dir/flags.make
+CMakeFiles/dependencies.dir/ms.o: ../ms.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/dependencies.dir/ms.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dependencies.dir/ms.o -c /Users/yinli/Documents/experiments_crf/edison_source/segm/ms.cpp
 
-CMakeFiles/dependencies.dir/ms.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dependencies.dir/ms.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyin/edison_source/segm/ms.cpp > CMakeFiles/dependencies.dir/ms.cpp.i
+CMakeFiles/dependencies.dir/ms.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dependencies.dir/ms.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yinli/Documents/experiments_crf/edison_source/segm/ms.cpp > CMakeFiles/dependencies.dir/ms.i
 
-CMakeFiles/dependencies.dir/ms.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dependencies.dir/ms.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyin/edison_source/segm/ms.cpp -o CMakeFiles/dependencies.dir/ms.cpp.s
+CMakeFiles/dependencies.dir/ms.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dependencies.dir/ms.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yinli/Documents/experiments_crf/edison_source/segm/ms.cpp -o CMakeFiles/dependencies.dir/ms.s
 
-CMakeFiles/dependencies.dir/ms.cpp.o.requires:
+CMakeFiles/dependencies.dir/ms.o.requires:
 
-.PHONY : CMakeFiles/dependencies.dir/ms.cpp.o.requires
+.PHONY : CMakeFiles/dependencies.dir/ms.o.requires
 
-CMakeFiles/dependencies.dir/ms.cpp.o.provides: CMakeFiles/dependencies.dir/ms.cpp.o.requires
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/ms.cpp.o.provides.build
-.PHONY : CMakeFiles/dependencies.dir/ms.cpp.o.provides
+CMakeFiles/dependencies.dir/ms.o.provides: CMakeFiles/dependencies.dir/ms.o.requires
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/ms.o.provides.build
+.PHONY : CMakeFiles/dependencies.dir/ms.o.provides
 
-CMakeFiles/dependencies.dir/ms.cpp.o.provides.build: CMakeFiles/dependencies.dir/ms.cpp.o
-
-
-CMakeFiles/dependencies.dir/RAList.cpp.o: CMakeFiles/dependencies.dir/flags.make
-CMakeFiles/dependencies.dir/RAList.cpp.o: ../RAList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyin/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dependencies.dir/RAList.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dependencies.dir/RAList.cpp.o -c /home/liyin/edison_source/segm/RAList.cpp
-
-CMakeFiles/dependencies.dir/RAList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dependencies.dir/RAList.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyin/edison_source/segm/RAList.cpp > CMakeFiles/dependencies.dir/RAList.cpp.i
-
-CMakeFiles/dependencies.dir/RAList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dependencies.dir/RAList.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyin/edison_source/segm/RAList.cpp -o CMakeFiles/dependencies.dir/RAList.cpp.s
-
-CMakeFiles/dependencies.dir/RAList.cpp.o.requires:
-
-.PHONY : CMakeFiles/dependencies.dir/RAList.cpp.o.requires
-
-CMakeFiles/dependencies.dir/RAList.cpp.o.provides: CMakeFiles/dependencies.dir/RAList.cpp.o.requires
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/RAList.cpp.o.provides.build
-.PHONY : CMakeFiles/dependencies.dir/RAList.cpp.o.provides
-
-CMakeFiles/dependencies.dir/RAList.cpp.o.provides.build: CMakeFiles/dependencies.dir/RAList.cpp.o
+CMakeFiles/dependencies.dir/ms.o.provides.build: CMakeFiles/dependencies.dir/ms.o
 
 
-CMakeFiles/dependencies.dir/rlist.cpp.o: CMakeFiles/dependencies.dir/flags.make
-CMakeFiles/dependencies.dir/rlist.cpp.o: ../rlist.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyin/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dependencies.dir/rlist.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dependencies.dir/rlist.cpp.o -c /home/liyin/edison_source/segm/rlist.cpp
+CMakeFiles/dependencies.dir/RAList.o: CMakeFiles/dependencies.dir/flags.make
+CMakeFiles/dependencies.dir/RAList.o: ../RAList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/dependencies.dir/RAList.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dependencies.dir/RAList.o -c /Users/yinli/Documents/experiments_crf/edison_source/segm/RAList.cpp
 
-CMakeFiles/dependencies.dir/rlist.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dependencies.dir/rlist.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyin/edison_source/segm/rlist.cpp > CMakeFiles/dependencies.dir/rlist.cpp.i
+CMakeFiles/dependencies.dir/RAList.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dependencies.dir/RAList.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yinli/Documents/experiments_crf/edison_source/segm/RAList.cpp > CMakeFiles/dependencies.dir/RAList.i
 
-CMakeFiles/dependencies.dir/rlist.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dependencies.dir/rlist.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyin/edison_source/segm/rlist.cpp -o CMakeFiles/dependencies.dir/rlist.cpp.s
+CMakeFiles/dependencies.dir/RAList.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dependencies.dir/RAList.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yinli/Documents/experiments_crf/edison_source/segm/RAList.cpp -o CMakeFiles/dependencies.dir/RAList.s
 
-CMakeFiles/dependencies.dir/rlist.cpp.o.requires:
+CMakeFiles/dependencies.dir/RAList.o.requires:
 
-.PHONY : CMakeFiles/dependencies.dir/rlist.cpp.o.requires
+.PHONY : CMakeFiles/dependencies.dir/RAList.o.requires
 
-CMakeFiles/dependencies.dir/rlist.cpp.o.provides: CMakeFiles/dependencies.dir/rlist.cpp.o.requires
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/rlist.cpp.o.provides.build
-.PHONY : CMakeFiles/dependencies.dir/rlist.cpp.o.provides
+CMakeFiles/dependencies.dir/RAList.o.provides: CMakeFiles/dependencies.dir/RAList.o.requires
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/RAList.o.provides.build
+.PHONY : CMakeFiles/dependencies.dir/RAList.o.provides
 
-CMakeFiles/dependencies.dir/rlist.cpp.o.provides.build: CMakeFiles/dependencies.dir/rlist.cpp.o
+CMakeFiles/dependencies.dir/RAList.o.provides.build: CMakeFiles/dependencies.dir/RAList.o
 
 
-CMakeFiles/dependencies.dir/loadImage.cpp.o: CMakeFiles/dependencies.dir/flags.make
-CMakeFiles/dependencies.dir/loadImage.cpp.o: ../loadImage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyin/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dependencies.dir/loadImage.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dependencies.dir/loadImage.cpp.o -c /home/liyin/edison_source/segm/loadImage.cpp
+CMakeFiles/dependencies.dir/rlist.o: CMakeFiles/dependencies.dir/flags.make
+CMakeFiles/dependencies.dir/rlist.o: ../rlist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/dependencies.dir/rlist.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dependencies.dir/rlist.o -c /Users/yinli/Documents/experiments_crf/edison_source/segm/rlist.cpp
 
-CMakeFiles/dependencies.dir/loadImage.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dependencies.dir/loadImage.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyin/edison_source/segm/loadImage.cpp > CMakeFiles/dependencies.dir/loadImage.cpp.i
+CMakeFiles/dependencies.dir/rlist.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dependencies.dir/rlist.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yinli/Documents/experiments_crf/edison_source/segm/rlist.cpp > CMakeFiles/dependencies.dir/rlist.i
 
-CMakeFiles/dependencies.dir/loadImage.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dependencies.dir/loadImage.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyin/edison_source/segm/loadImage.cpp -o CMakeFiles/dependencies.dir/loadImage.cpp.s
+CMakeFiles/dependencies.dir/rlist.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dependencies.dir/rlist.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yinli/Documents/experiments_crf/edison_source/segm/rlist.cpp -o CMakeFiles/dependencies.dir/rlist.s
 
-CMakeFiles/dependencies.dir/loadImage.cpp.o.requires:
+CMakeFiles/dependencies.dir/rlist.o.requires:
 
-.PHONY : CMakeFiles/dependencies.dir/loadImage.cpp.o.requires
+.PHONY : CMakeFiles/dependencies.dir/rlist.o.requires
 
-CMakeFiles/dependencies.dir/loadImage.cpp.o.provides: CMakeFiles/dependencies.dir/loadImage.cpp.o.requires
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/loadImage.cpp.o.provides.build
-.PHONY : CMakeFiles/dependencies.dir/loadImage.cpp.o.provides
+CMakeFiles/dependencies.dir/rlist.o.provides: CMakeFiles/dependencies.dir/rlist.o.requires
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/rlist.o.provides.build
+.PHONY : CMakeFiles/dependencies.dir/rlist.o.provides
 
-CMakeFiles/dependencies.dir/loadImage.cpp.o.provides.build: CMakeFiles/dependencies.dir/loadImage.cpp.o
+CMakeFiles/dependencies.dir/rlist.o.provides.build: CMakeFiles/dependencies.dir/rlist.o
+
+
+CMakeFiles/dependencies.dir/loadImage.o: CMakeFiles/dependencies.dir/flags.make
+CMakeFiles/dependencies.dir/loadImage.o: ../loadImage.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/dependencies.dir/loadImage.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dependencies.dir/loadImage.o -c /Users/yinli/Documents/experiments_crf/edison_source/segm/loadImage.cpp
+
+CMakeFiles/dependencies.dir/loadImage.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dependencies.dir/loadImage.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yinli/Documents/experiments_crf/edison_source/segm/loadImage.cpp > CMakeFiles/dependencies.dir/loadImage.i
+
+CMakeFiles/dependencies.dir/loadImage.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dependencies.dir/loadImage.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yinli/Documents/experiments_crf/edison_source/segm/loadImage.cpp -o CMakeFiles/dependencies.dir/loadImage.s
+
+CMakeFiles/dependencies.dir/loadImage.o.requires:
+
+.PHONY : CMakeFiles/dependencies.dir/loadImage.o.requires
+
+CMakeFiles/dependencies.dir/loadImage.o.provides: CMakeFiles/dependencies.dir/loadImage.o.requires
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/loadImage.o.provides.build
+.PHONY : CMakeFiles/dependencies.dir/loadImage.o.provides
+
+CMakeFiles/dependencies.dir/loadImage.o.provides.build: CMakeFiles/dependencies.dir/loadImage.o
+
+
+CMakeFiles/dependencies.dir/dir_segmentation.o: CMakeFiles/dependencies.dir/flags.make
+CMakeFiles/dependencies.dir/dir_segmentation.o: ../dir_segmentation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/dependencies.dir/dir_segmentation.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dependencies.dir/dir_segmentation.o -c /Users/yinli/Documents/experiments_crf/edison_source/segm/dir_segmentation.cpp
+
+CMakeFiles/dependencies.dir/dir_segmentation.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dependencies.dir/dir_segmentation.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yinli/Documents/experiments_crf/edison_source/segm/dir_segmentation.cpp > CMakeFiles/dependencies.dir/dir_segmentation.i
+
+CMakeFiles/dependencies.dir/dir_segmentation.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dependencies.dir/dir_segmentation.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yinli/Documents/experiments_crf/edison_source/segm/dir_segmentation.cpp -o CMakeFiles/dependencies.dir/dir_segmentation.s
+
+CMakeFiles/dependencies.dir/dir_segmentation.o.requires:
+
+.PHONY : CMakeFiles/dependencies.dir/dir_segmentation.o.requires
+
+CMakeFiles/dependencies.dir/dir_segmentation.o.provides: CMakeFiles/dependencies.dir/dir_segmentation.o.requires
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/dir_segmentation.o.provides.build
+.PHONY : CMakeFiles/dependencies.dir/dir_segmentation.o.provides
+
+CMakeFiles/dependencies.dir/dir_segmentation.o.provides.build: CMakeFiles/dependencies.dir/dir_segmentation.o
+
+
+CMakeFiles/dependencies.dir/call_segment.o: CMakeFiles/dependencies.dir/flags.make
+CMakeFiles/dependencies.dir/call_segment.o: ../call_segment.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/dependencies.dir/call_segment.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/dependencies.dir/call_segment.o -c /Users/yinli/Documents/experiments_crf/edison_source/segm/call_segment.cpp
+
+CMakeFiles/dependencies.dir/call_segment.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/dependencies.dir/call_segment.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yinli/Documents/experiments_crf/edison_source/segm/call_segment.cpp > CMakeFiles/dependencies.dir/call_segment.i
+
+CMakeFiles/dependencies.dir/call_segment.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/dependencies.dir/call_segment.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yinli/Documents/experiments_crf/edison_source/segm/call_segment.cpp -o CMakeFiles/dependencies.dir/call_segment.s
+
+CMakeFiles/dependencies.dir/call_segment.o.requires:
+
+.PHONY : CMakeFiles/dependencies.dir/call_segment.o.requires
+
+CMakeFiles/dependencies.dir/call_segment.o.provides: CMakeFiles/dependencies.dir/call_segment.o.requires
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/call_segment.o.provides.build
+.PHONY : CMakeFiles/dependencies.dir/call_segment.o.provides
+
+CMakeFiles/dependencies.dir/call_segment.o.provides.build: CMakeFiles/dependencies.dir/call_segment.o
 
 
 # Object files for target dependencies
 dependencies_OBJECTS = \
-"CMakeFiles/dependencies.dir/ms.cpp.o" \
-"CMakeFiles/dependencies.dir/RAList.cpp.o" \
-"CMakeFiles/dependencies.dir/rlist.cpp.o" \
-"CMakeFiles/dependencies.dir/loadImage.cpp.o"
+"CMakeFiles/dependencies.dir/ms.o" \
+"CMakeFiles/dependencies.dir/RAList.o" \
+"CMakeFiles/dependencies.dir/rlist.o" \
+"CMakeFiles/dependencies.dir/loadImage.o" \
+"CMakeFiles/dependencies.dir/dir_segmentation.o" \
+"CMakeFiles/dependencies.dir/call_segment.o"
 
 # External object files for target dependencies
 dependencies_EXTERNAL_OBJECTS =
 
-libdependencies.a: CMakeFiles/dependencies.dir/ms.cpp.o
-libdependencies.a: CMakeFiles/dependencies.dir/RAList.cpp.o
-libdependencies.a: CMakeFiles/dependencies.dir/rlist.cpp.o
-libdependencies.a: CMakeFiles/dependencies.dir/loadImage.cpp.o
+libdependencies.a: CMakeFiles/dependencies.dir/ms.o
+libdependencies.a: CMakeFiles/dependencies.dir/RAList.o
+libdependencies.a: CMakeFiles/dependencies.dir/rlist.o
+libdependencies.a: CMakeFiles/dependencies.dir/loadImage.o
+libdependencies.a: CMakeFiles/dependencies.dir/dir_segmentation.o
+libdependencies.a: CMakeFiles/dependencies.dir/call_segment.o
 libdependencies.a: CMakeFiles/dependencies.dir/build.make
 libdependencies.a: CMakeFiles/dependencies.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liyin/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX static library libdependencies.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library libdependencies.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/dependencies.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dependencies.dir/link.txt --verbose=$(VERBOSE)
 
@@ -178,10 +230,12 @@ CMakeFiles/dependencies.dir/build: libdependencies.a
 
 .PHONY : CMakeFiles/dependencies.dir/build
 
-CMakeFiles/dependencies.dir/requires: CMakeFiles/dependencies.dir/ms.cpp.o.requires
-CMakeFiles/dependencies.dir/requires: CMakeFiles/dependencies.dir/RAList.cpp.o.requires
-CMakeFiles/dependencies.dir/requires: CMakeFiles/dependencies.dir/rlist.cpp.o.requires
-CMakeFiles/dependencies.dir/requires: CMakeFiles/dependencies.dir/loadImage.cpp.o.requires
+CMakeFiles/dependencies.dir/requires: CMakeFiles/dependencies.dir/ms.o.requires
+CMakeFiles/dependencies.dir/requires: CMakeFiles/dependencies.dir/RAList.o.requires
+CMakeFiles/dependencies.dir/requires: CMakeFiles/dependencies.dir/rlist.o.requires
+CMakeFiles/dependencies.dir/requires: CMakeFiles/dependencies.dir/loadImage.o.requires
+CMakeFiles/dependencies.dir/requires: CMakeFiles/dependencies.dir/dir_segmentation.o.requires
+CMakeFiles/dependencies.dir/requires: CMakeFiles/dependencies.dir/call_segment.o.requires
 
 .PHONY : CMakeFiles/dependencies.dir/requires
 
@@ -190,6 +244,6 @@ CMakeFiles/dependencies.dir/clean:
 .PHONY : CMakeFiles/dependencies.dir/clean
 
 CMakeFiles/dependencies.dir/depend:
-	cd /home/liyin/edison_source/segm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liyin/edison_source/segm /home/liyin/edison_source/segm /home/liyin/edison_source/segm/build /home/liyin/edison_source/segm/build /home/liyin/edison_source/segm/build/CMakeFiles/dependencies.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/yinli/Documents/experiments_crf/edison_source/segm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yinli/Documents/experiments_crf/edison_source/segm /Users/yinli/Documents/experiments_crf/edison_source/segm /Users/yinli/Documents/experiments_crf/edison_source/segm/build /Users/yinli/Documents/experiments_crf/edison_source/segm/build /Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/dependencies.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dependencies.dir/depend
 

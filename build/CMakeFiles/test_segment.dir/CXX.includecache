@@ -6,45 +6,55 @@
 
 #IncludeRegexTransform: 
 
-/home/liyin/edison_source/segm/RAList.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/RAList.h
 
-/home/liyin/edison_source/segm/defs.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/defs.h
 
-/home/liyin/edison_source/segm/loadImage.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/loadImage.h
 defs.h
-/home/liyin/edison_source/segm/defs.h
-stdio.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/defs.h
+iostream
 -
-stdarg.h
+string
 -
-stdlib.h
+unordered_map
 -
-string.h
+tuple
+-
+vector
+-
+boost/filesystem.hpp
+-
+boost/timer.hpp
+-
+boost/program_options.hpp
+-
+boost/tuple/tuple.hpp
 -
 
-/home/liyin/edison_source/segm/ms.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/ms.h
 tdef.h
-/home/liyin/edison_source/segm/tdef.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/tdef.h
 
-/home/liyin/edison_source/segm/msImageProcessor.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/msImageProcessor.h
 ms.h
-/home/liyin/edison_source/segm/ms.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/ms.h
 rlist.h
-/home/liyin/edison_source/segm/rlist.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/rlist.h
 RAList.h
-/home/liyin/edison_source/segm/RAList.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/RAList.h
 
-/home/liyin/edison_source/segm/rlist.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/rlist.h
 tdef.h
-/home/liyin/edison_source/segm/tdef.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/tdef.h
 
-/home/liyin/edison_source/segm/tdef.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/tdef.h
 
-/home/liyin/edison_source/segm/test_segment.cpp
+/Users/yinli/Documents/experiments_crf/edison_source/segm/test_segment.cpp
 msImageProcessor.h
-/home/liyin/edison_source/segm/msImageProcessor.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/msImageProcessor.h
 loadImage.h
-/home/liyin/edison_source/segm/loadImage.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/loadImage.h
 iostream
 -
 

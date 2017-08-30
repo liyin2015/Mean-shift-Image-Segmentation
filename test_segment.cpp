@@ -8,10 +8,12 @@
 
 using namespace std;
 
+
+
 int main()
 {
     cout<<"hello"<<endl;
-    char* filename = "/Users/yinli/Documents/experiments_crf/edison_source/segm/5_2_s.ppm";
+    const char* filename = "/Users/yinli/Documents/experiments_crf/edison_source/segm/17_22_s.ppm";
     unsigned char* image;
     int h,w,d;
     int turn = CmCReadImage(filename, &image, h, w, d);
@@ -34,7 +36,7 @@ int main()
 
     unsigned char* filterImage_ = new unsigned char [h * w * d];
     iProc.GetResults(filterImage_);
-    char* o_filename = "/Users/yinli/Documents/experiments_crf/edison_source/segm/5_2_s_f.ppm";
+    const char* o_filename = "/Users/yinli/Documents/experiments_crf/edison_source/segm/17_22_s_f.ppm";
     CmCWriteImage(o_filename,filterImage_,h,w,d, FILE_PPM);
     //fuse regions
     iProc.DefineImage(filterImage_,COLOR,h,w);
@@ -44,7 +46,7 @@ int main()
     }
     unsigned char* segImage_ = new unsigned char [h * w * d];
     iProc.GetResults(segImage_);
-    char* o_s_filename = "/Users/yinli/Documents/experiments_crf/edison_source/segm/5_2_s_s.ppm";
+    const char* o_s_filename = "/Users/yinli/Documents/experiments_crf/edison_source/segm/17_22_s_s.ppm";
     CmCWriteImage(o_s_filename,segImage_,h,w,d, FILE_PPM);
 
     //define the boundaries
@@ -62,7 +64,7 @@ int main()
     {
         boundaries[i] = regionIndeces[i];
     }
-    char* b_s_filename = "/Users/yinli/Documents/experiments_crf/edison_source/segm/5_2_s_b.ppm";
+    const char* b_s_filename = "/Users/yinli/Documents/experiments_crf/edison_source/segm/17_22_s_b.ppm";
     writeImage(b_s_filename, image, boundaries, h,w,d,numBoundaries_,FILE_PPM);
 }
 

@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/liyin/edison_source/segm/RAList.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/RAList.h
 
-/home/liyin/edison_source/segm/ms.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/ms.h
 tdef.h
-/home/liyin/edison_source/segm/tdef.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/tdef.h
 
-/home/liyin/edison_source/segm/msImageProcessor.cpp
+/Users/yinli/Documents/experiments_crf/edison_source/segm/msImageProcessor.cpp
 msImageProcessor.h
-/home/liyin/edison_source/segm/msImageProcessor.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/msImageProcessor.h
 math.h
 -
 stdio.h
@@ -28,17 +28,17 @@ stdlib.h
 iostream
 -
 
-/home/liyin/edison_source/segm/msImageProcessor.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/msImageProcessor.h
 ms.h
-/home/liyin/edison_source/segm/ms.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/ms.h
 rlist.h
-/home/liyin/edison_source/segm/rlist.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/rlist.h
 RAList.h
-/home/liyin/edison_source/segm/RAList.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/RAList.h
 
-/home/liyin/edison_source/segm/rlist.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/rlist.h
 tdef.h
-/home/liyin/edison_source/segm/tdef.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/tdef.h
 
-/home/liyin/edison_source/segm/tdef.h
+/Users/yinli/Documents/experiments_crf/edison_source/segm/tdef.h
 

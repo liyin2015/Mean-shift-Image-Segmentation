@@ -7,7 +7,7 @@
 #include <cstdio>
 using namespace std;
 //get the fileformat of an image
-int CmCGetImageFormat(char *filename)
+int CmCGetImageFormat(const char *filename)
 {
     if(!filename) return EXE_NULL_PTR;
     FILE *fp = fopen(filename, "rb");
@@ -27,7 +27,7 @@ int CmCGetImageFormat(char *filename)
 }
 #include <string.h>
 
-int writePPMImage(char *filename, unsigned char *image, int height, int width, int depth, char *comments)
+int writePPMImage(const char *filename, unsigned char *image, int height, int width, int depth, char *comments)
 {
     cout<<"file1_1"<<endl;
     if(!filename || !image)
@@ -65,7 +65,7 @@ int writePPMImage(char *filename, unsigned char *image, int height, int width, i
     return PPM_NO_ERRORS;
 }
 
-int writePGMImage(char *filename, unsigned char *image, int height, int width, int depth, char *comments)
+int writePGMImage(const char *filename, unsigned char *image, int height, int width, int depth, char *comments)
 {
 
     if(!filename || !image) return PPM_NULL_PTR;
@@ -91,7 +91,7 @@ int writePGMImage(char *filename, unsigned char *image, int height, int width, i
 }
 
 //write a PNM image
-int writePNMImage(char *filename , unsigned char *image, int height, int width, int depth, bool color,
+int writePNMImage(const char *filename , unsigned char *image, int height, int width, int depth, bool color,
                   char *comments)
 {
     int error;
@@ -103,7 +103,7 @@ int writePNMImage(char *filename , unsigned char *image, int height, int width, 
     return error;
 }
 
-int readPPMImage(char *filename, unsigned char **image, int& height, int& width, int& depth)
+int readPPMImage(const char *filename, unsigned char **image, int& height, int& width, int& depth)
 {
 
     if(!filename) return PPM_NULL_PTR;
@@ -161,7 +161,7 @@ int readPPMImage(char *filename, unsigned char **image, int& height, int& width,
     return PPM_NO_ERRORS;
 }
 
-int readPGMImage(char *filename, unsigned char **image, int& height, int& width, int& depth)
+int readPGMImage(const char *filename, unsigned char **image, int& height, int& width, int& depth)
 {
 
     if(!filename) return PPM_NULL_PTR;
@@ -193,7 +193,7 @@ int readPGMImage(char *filename, unsigned char **image, int& height, int& width,
 }
 
 //read a PNM image
-int readPNMImage(char *filename, unsigned char **image, int& height, int& width, int& depth, bool& color)
+int readPNMImage(const char *filename, unsigned char **image, int& height, int& width, int& depth, bool& color)
 {
     color = true; //assume PPM format
     int error = readPPMImage(filename, image, height, width, depth);
@@ -206,7 +206,7 @@ int readPNMImage(char *filename, unsigned char **image, int& height, int& width,
 #include <iostream>
 using namespace std;
 //read image data
-int CmCReadImage(char *filename, unsigned char **image, int& height, int& width, int& dim)
+int CmCReadImage(const char *filename, unsigned char **image, int& height, int& width, int& dim)
 {
     cout<<"get in"<<endl;
     if(!filename) return EXE_NULL_PTR;
@@ -289,7 +289,7 @@ unsigned char *CmCConvertToGrayscale(unsigned char *image, int height, int width
 }
 
 //write Matlab ASCII file
-int CmCWriteMFile(char *filename, float *data, int rows, int cols, int n)
+int CmCWriteMFile(const char *filename, float *data, int rows, int cols, int n)
 {
     if(!filename || !data) return EXE_NULL_PTR;
     FILE *fp = fopen(filename, "wb");
@@ -310,7 +310,7 @@ int CmCWriteMFile(char *filename, float *data, int rows, int cols, int n)
     return NO_ERRORS;
 }
 //write image data
-int CmCWriteImage(char *filename, unsigned char *image, int height, int width, int dim, int filetype)
+int CmCWriteImage(const char *filename, unsigned char *image, int height, int width, int dim, int filetype)
 {
     int error, i;
     unsigned char *data;
@@ -362,7 +362,7 @@ int CmCWriteImage(char *filename, unsigned char *image, int height, int width, i
         return EXE_FILE_WRITE_ERROR;
 }
 
-int writeImage(char *filename, unsigned char *image, int *dataPoints, int height_, int width_, int dim_, int n, int filetype)
+int writeImage(const char *filename, unsigned char *image, int *dataPoints, int height_, int width_, int dim_, int n, int filetype)
 {
     unsigned char *data = new unsigned char [height_ * width_ * dim_];
     if(!data) return EXE_OUT_OF_MEMORY;
@@ -371,6 +371,7 @@ int writeImage(char *filename, unsigned char *image, int *dataPoints, int height
     if(dataPoints) {
         int i, j, x, y;
         for(i = 0; i < n; i++) {
+            //if(dataPoints[i]==)
             data[dim_*dataPoints[i]+0]=255;
             data[dim_*dataPoints[i]+1]=0;
             data[dim_*dataPoints[i]+2]=0;
@@ -380,4 +381,94 @@ int writeImage(char *filename, unsigned char *image, int *dataPoints, int height
     int error = CmCWriteImage(filename, data, height_, width_, dim_, filetype);
     delete [] data;
     return error;
+}
+using namespace std;
+
+int dealInputCommand(int argc, char** argv,  FileMap& map)
+{
+    cout<<"here1"<<endl;
+    boost::program_options::options_description desc("Allowed options");
+    desc.add_options()
+            ("help", "produce help message")
+            ("I_dir", boost::program_options::value<std::string>(), "the I folder to process")
+            ("O_dir", boost::program_options::value<std::string>()->default_value("output"), "the O folder to process")
+            ;
+
+    boost::program_options::positional_options_description positionals;
+    positionals.add("I_dir", 1);
+    cout<<"here12"<<endl;
+    boost::program_options::variables_map parameters;
+    boost::program_options::store(boost::program_options::command_line_parser(argc, argv).options(desc).positional(positionals).run(), parameters);
+    boost::program_options::notify(parameters);
+
+    if(argc==1)
+    {
+        cout<<"need more parameters"<<endl;
+        return -1;
+    }
+
+    if (parameters.find("help") != parameters.end()) {
+        std::cout << desc << std::endl;
+        return 1;
+    }
+    cout<<"here13"<<endl;
+    //check output directory
+    boost::filesystem::path outputDir(parameters["O_dir"].as<std::string>());
+    if (!boost::filesystem::is_directory(outputDir)) {
+        boost::filesystem::create_directory(outputDir);
+    }
+    FileValueTuple o_dir = boost::make_tuple(outputDir.string(), vector<string>() );
+    map["O_dir"]=o_dir;
+    cout<<"here14"<<endl;
+    //vector<boost::filesystem::path> paths(KeySet.size());
+
+    if(parameters["I_dir"].as<std::string>().empty())
+    {
+
+        cout<<"input directory is empty"<<endl;
+        return -1;
+    }
+    else
+    {
+        boost::filesystem::path inputDir(parameters["I_dir"].as<std::string>());
+        cout<<"I_dir"<<": "<<inputDir<<endl;
+        if (!inputDir.empty() &&!boost::filesystem::is_directory(inputDir)) {
+            std::cout << "Image directory not found ..." <<inputDir.string()<< std::endl;
+            return -1;
+        }
+        string current_dir = inputDir.string();
+        std::vector<boost::filesystem::path> pathVector;
+        std::copy(boost::filesystem::directory_iterator(current_dir), boost::filesystem::directory_iterator(), std::back_inserter(pathVector));
+
+        std::sort(pathVector.begin(), pathVector.end());
+
+        std::string extension;
+        int count = 0;
+
+        std::vector<string> file_paths, O_path;
+        //check the vector
+        for (std::vector<boost::filesystem::path>::const_iterator iterator (pathVector.begin()); iterator != pathVector.end(); ++iterator) {
+            if (boost::filesystem::is_regular_file(*iterator)) {
+
+                // Check supported file extensions.
+                extension = iterator->extension().string();
+                //cout<<"extension"<<extension<<endl;
+                std::transform(extension.begin(), extension.end(), extension.begin(), ::tolower);
+
+                if (extension == ".png" || extension == ".jpg" || extension == ".jpeg" || extension == ".tiff" || extension==".tif"
+                    || extension == ".bmp" || extension == ".ppm") {
+                    file_paths.push_back((*iterator).string());
+                    cout<<(*iterator).string()<<endl;
+                    cout<<iterator->filename()<<endl;
+                    O_path.push_back(outputDir.string()+"/"+(iterator->filename()).string());
+                    cout<<outputDir.string()+"/"+(iterator->filename()).string()<<endl;
+                }
+            }
+        }
+        FileValueTuple dir_value = boost::make_tuple(inputDir.string(), file_paths );
+        map["I_dir"]=dir_value;
+        get<1>(map["O_dir"]) = O_path;
+    }
+
+    return 1;
 }

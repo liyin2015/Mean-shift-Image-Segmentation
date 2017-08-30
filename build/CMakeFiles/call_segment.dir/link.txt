@@ -1,0 +1,2 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libcall_segment.a  CMakeFiles/call_segment.dir/call_segment.o CMakeFiles/call_segment.dir/loadImage.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libcall_segment.a

@@ -1,5 +1,7 @@
-/home/liyin/edison_source/segm/build/CMakeFiles/test_segment.dir
-/home/liyin/edison_source/segm/build/CMakeFiles/edit_cache.dir
-/home/liyin/edison_source/segm/build/CMakeFiles/rebuild_cache.dir
-/home/liyin/edison_source/segm/build/CMakeFiles/processor.dir
-/home/liyin/edison_source/segm/build/CMakeFiles/dependencies.dir
+/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/edit_cache.dir
+/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/dependencies.dir
+/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/test_segment.dir
+/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/call_segment.dir
+/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/rebuild_cache.dir
+/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/processor.dir
+/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/dir_segment.dir

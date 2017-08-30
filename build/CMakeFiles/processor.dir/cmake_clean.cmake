@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/processor.dir/msImageProcessor.cpp.o"
+  "CMakeFiles/processor.dir/msImageProcessor.o"
   "libprocessor.pdb"
   "libprocessor.a"
 )

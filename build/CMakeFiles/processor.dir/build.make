@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/liyin/anaconda/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.6.2/bin/cmake
 
 # The command to remove a file.
-RM = /home/liyin/anaconda/bin/cmake -E remove -f
+RM = /usr/local/Cellar/cmake/3.6.2/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liyin/edison_source/segm
+CMAKE_SOURCE_DIR = /Users/yinli/Documents/experiments_crf/edison_source/segm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liyin/edison_source/segm/build
+CMAKE_BINARY_DIR = /Users/yinli/Documents/experiments_crf/edison_source/segm/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/processor.dir/depend.make
@@ -57,41 +57,41 @@ include CMakeFiles/processor.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/processor.dir/flags.make
 
-CMakeFiles/processor.dir/msImageProcessor.cpp.o: CMakeFiles/processor.dir/flags.make
-CMakeFiles/processor.dir/msImageProcessor.cpp.o: ../msImageProcessor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/liyin/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/processor.dir/msImageProcessor.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/processor.dir/msImageProcessor.cpp.o -c /home/liyin/edison_source/segm/msImageProcessor.cpp
+CMakeFiles/processor.dir/msImageProcessor.o: CMakeFiles/processor.dir/flags.make
+CMakeFiles/processor.dir/msImageProcessor.o: ../msImageProcessor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/processor.dir/msImageProcessor.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/processor.dir/msImageProcessor.o -c /Users/yinli/Documents/experiments_crf/edison_source/segm/msImageProcessor.cpp
 
-CMakeFiles/processor.dir/msImageProcessor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/processor.dir/msImageProcessor.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/liyin/edison_source/segm/msImageProcessor.cpp > CMakeFiles/processor.dir/msImageProcessor.cpp.i
+CMakeFiles/processor.dir/msImageProcessor.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/processor.dir/msImageProcessor.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/yinli/Documents/experiments_crf/edison_source/segm/msImageProcessor.cpp > CMakeFiles/processor.dir/msImageProcessor.i
 
-CMakeFiles/processor.dir/msImageProcessor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/processor.dir/msImageProcessor.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/liyin/edison_source/segm/msImageProcessor.cpp -o CMakeFiles/processor.dir/msImageProcessor.cpp.s
+CMakeFiles/processor.dir/msImageProcessor.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/processor.dir/msImageProcessor.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/yinli/Documents/experiments_crf/edison_source/segm/msImageProcessor.cpp -o CMakeFiles/processor.dir/msImageProcessor.s
 
-CMakeFiles/processor.dir/msImageProcessor.cpp.o.requires:
+CMakeFiles/processor.dir/msImageProcessor.o.requires:
 
-.PHONY : CMakeFiles/processor.dir/msImageProcessor.cpp.o.requires
+.PHONY : CMakeFiles/processor.dir/msImageProcessor.o.requires
 
-CMakeFiles/processor.dir/msImageProcessor.cpp.o.provides: CMakeFiles/processor.dir/msImageProcessor.cpp.o.requires
-	$(MAKE) -f CMakeFiles/processor.dir/build.make CMakeFiles/processor.dir/msImageProcessor.cpp.o.provides.build
-.PHONY : CMakeFiles/processor.dir/msImageProcessor.cpp.o.provides
+CMakeFiles/processor.dir/msImageProcessor.o.provides: CMakeFiles/processor.dir/msImageProcessor.o.requires
+	$(MAKE) -f CMakeFiles/processor.dir/build.make CMakeFiles/processor.dir/msImageProcessor.o.provides.build
+.PHONY : CMakeFiles/processor.dir/msImageProcessor.o.provides
 
-CMakeFiles/processor.dir/msImageProcessor.cpp.o.provides.build: CMakeFiles/processor.dir/msImageProcessor.cpp.o
+CMakeFiles/processor.dir/msImageProcessor.o.provides.build: CMakeFiles/processor.dir/msImageProcessor.o
 
 
 # Object files for target processor
 processor_OBJECTS = \
-"CMakeFiles/processor.dir/msImageProcessor.cpp.o"
+"CMakeFiles/processor.dir/msImageProcessor.o"
 
 # External object files for target processor
 processor_EXTERNAL_OBJECTS =
 
-libprocessor.a: CMakeFiles/processor.dir/msImageProcessor.cpp.o
+libprocessor.a: CMakeFiles/processor.dir/msImageProcessor.o
 libprocessor.a: CMakeFiles/processor.dir/build.make
 libprocessor.a: CMakeFiles/processor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/liyin/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libprocessor.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libprocessor.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/processor.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/processor.dir/link.txt --verbose=$(VERBOSE)
 
@@ -100,7 +100,7 @@ CMakeFiles/processor.dir/build: libprocessor.a
 
 .PHONY : CMakeFiles/processor.dir/build
 
-CMakeFiles/processor.dir/requires: CMakeFiles/processor.dir/msImageProcessor.cpp.o.requires
+CMakeFiles/processor.dir/requires: CMakeFiles/processor.dir/msImageProcessor.o.requires
 
 .PHONY : CMakeFiles/processor.dir/requires
 
@@ -109,6 +109,6 @@ CMakeFiles/processor.dir/clean:
 .PHONY : CMakeFiles/processor.dir/clean
 
 CMakeFiles/processor.dir/depend:
-	cd /home/liyin/edison_source/segm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/liyin/edison_source/segm /home/liyin/edison_source/segm /home/liyin/edison_source/segm/build /home/liyin/edison_source/segm/build /home/liyin/edison_source/segm/build/CMakeFiles/processor.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/yinli/Documents/experiments_crf/edison_source/segm/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/yinli/Documents/experiments_crf/edison_source/segm /Users/yinli/Documents/experiments_crf/edison_source/segm /Users/yinli/Documents/experiments_crf/edison_source/segm/build /Users/yinli/Documents/experiments_crf/edison_source/segm/build /Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/processor.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/processor.dir/depend
 

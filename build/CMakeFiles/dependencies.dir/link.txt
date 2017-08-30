@@ -1,2 +1,2 @@
-/usr/bin/ar qc libdependencies.a  CMakeFiles/dependencies.dir/ms.cpp.o CMakeFiles/dependencies.dir/RAList.cpp.o CMakeFiles/dependencies.dir/rlist.cpp.o CMakeFiles/dependencies.dir/loadImage.cpp.o
-/usr/bin/ranlib libdependencies.a
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libdependencies.a  CMakeFiles/dependencies.dir/ms.o CMakeFiles/dependencies.dir/RAList.o CMakeFiles/dependencies.dir/rlist.o CMakeFiles/dependencies.dir/loadImage.o CMakeFiles/dependencies.dir/dir_segmentation.o CMakeFiles/dependencies.dir/call_segment.o
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libdependencies.a

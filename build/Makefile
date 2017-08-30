@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/liyin/anaconda/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.6.2/bin/cmake
 
 # The command to remove a file.
-RM = /home/liyin/anaconda/bin/cmake -E remove -f
+RM = /usr/local/Cellar/cmake/3.6.2/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/liyin/edison_source/segm
+CMAKE_SOURCE_DIR = /Users/yinli/Documents/experiments_crf/edison_source/segm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/liyin/edison_source/segm/build
+CMAKE_BINARY_DIR = /Users/yinli/Documents/experiments_crf/edison_source/segm/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/liyin/edison_source/segm/build
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/home/liyin/anaconda/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.6.2/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -70,7 +70,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/liyin/anaconda/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.6.2/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyin/edison_source/segm/build/CMakeFiles /home/liyin/edison_source/segm/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles /Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/liyin/edison_source/segm/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/yinli/Documents/experiments_crf/edison_source/segm/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named dependencies
+
+# Build rule for target.
+dependencies: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dependencies
+.PHONY : dependencies
+
+# fast build rule for target.
+dependencies/fast:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/build
+.PHONY : dependencies/fast
+
+#=============================================================================
 # Target rules for targets named test_segment
 
 # Build rule for target.
@@ -122,6 +135,19 @@ test_segment: cmake_check_build_system
 test_segment/fast:
 	$(MAKE) -f CMakeFiles/test_segment.dir/build.make CMakeFiles/test_segment.dir/build
 .PHONY : test_segment/fast
+
+#=============================================================================
+# Target rules for targets named call_segment
+
+# Build rule for target.
+call_segment: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 call_segment
+.PHONY : call_segment
+
+# fast build rule for target.
+call_segment/fast:
+	$(MAKE) -f CMakeFiles/call_segment.dir/build.make CMakeFiles/call_segment.dir/build
+.PHONY : call_segment/fast
 
 #=============================================================================
 # Target rules for targets named processor
@@ -137,179 +163,146 @@ processor/fast:
 .PHONY : processor/fast
 
 #=============================================================================
-# Target rules for targets named dependencies
+# Target rules for targets named dir_segment
 
 # Build rule for target.
-dependencies: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 dependencies
-.PHONY : dependencies
+dir_segment: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 dir_segment
+.PHONY : dir_segment
 
 # fast build rule for target.
-dependencies/fast:
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/build
-.PHONY : dependencies/fast
+dir_segment/fast:
+	$(MAKE) -f CMakeFiles/dir_segment.dir/build.make CMakeFiles/dir_segment.dir/build
+.PHONY : dir_segment/fast
 
-RAList.o: RAList.cpp.o
-
+# target to build an object file
+RAList.o:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/RAList.o
 .PHONY : RAList.o
 
-# target to build an object file
-RAList.cpp.o:
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/RAList.cpp.o
-.PHONY : RAList.cpp.o
-
-RAList.i: RAList.cpp.i
-
+# target to preprocess a source file
+RAList.i:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/RAList.i
 .PHONY : RAList.i
 
-# target to preprocess a source file
-RAList.cpp.i:
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/RAList.cpp.i
-.PHONY : RAList.cpp.i
-
-RAList.s: RAList.cpp.s
-
+# target to generate assembly for a file
+RAList.s:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/RAList.s
 .PHONY : RAList.s
 
+# target to build an object file
+call_segment.o:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/call_segment.o
+	$(MAKE) -f CMakeFiles/call_segment.dir/build.make CMakeFiles/call_segment.dir/call_segment.o
+.PHONY : call_segment.o
+
+# target to preprocess a source file
+call_segment.i:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/call_segment.i
+	$(MAKE) -f CMakeFiles/call_segment.dir/build.make CMakeFiles/call_segment.dir/call_segment.i
+.PHONY : call_segment.i
+
 # target to generate assembly for a file
-RAList.cpp.s:
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/RAList.cpp.s
-.PHONY : RAList.cpp.s
+call_segment.s:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/call_segment.s
+	$(MAKE) -f CMakeFiles/call_segment.dir/build.make CMakeFiles/call_segment.dir/call_segment.s
+.PHONY : call_segment.s
 
-loadImage.o: loadImage.cpp.o
+# target to build an object file
+dir_segmentation.o:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/dir_segmentation.o
+	$(MAKE) -f CMakeFiles/dir_segment.dir/build.make CMakeFiles/dir_segment.dir/dir_segmentation.o
+.PHONY : dir_segmentation.o
 
+# target to preprocess a source file
+dir_segmentation.i:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/dir_segmentation.i
+	$(MAKE) -f CMakeFiles/dir_segment.dir/build.make CMakeFiles/dir_segment.dir/dir_segmentation.i
+.PHONY : dir_segmentation.i
+
+# target to generate assembly for a file
+dir_segmentation.s:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/dir_segmentation.s
+	$(MAKE) -f CMakeFiles/dir_segment.dir/build.make CMakeFiles/dir_segment.dir/dir_segmentation.s
+.PHONY : dir_segmentation.s
+
+# target to build an object file
+loadImage.o:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/loadImage.o
+	$(MAKE) -f CMakeFiles/call_segment.dir/build.make CMakeFiles/call_segment.dir/loadImage.o
 .PHONY : loadImage.o
 
-# target to build an object file
-loadImage.cpp.o:
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/loadImage.cpp.o
-.PHONY : loadImage.cpp.o
-
-loadImage.i: loadImage.cpp.i
-
+# target to preprocess a source file
+loadImage.i:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/loadImage.i
+	$(MAKE) -f CMakeFiles/call_segment.dir/build.make CMakeFiles/call_segment.dir/loadImage.i
 .PHONY : loadImage.i
 
-# target to preprocess a source file
-loadImage.cpp.i:
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/loadImage.cpp.i
-.PHONY : loadImage.cpp.i
-
-loadImage.s: loadImage.cpp.s
-
+# target to generate assembly for a file
+loadImage.s:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/loadImage.s
+	$(MAKE) -f CMakeFiles/call_segment.dir/build.make CMakeFiles/call_segment.dir/loadImage.s
 .PHONY : loadImage.s
 
-# target to generate assembly for a file
-loadImage.cpp.s:
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/loadImage.cpp.s
-.PHONY : loadImage.cpp.s
-
-ms.o: ms.cpp.o
-
+# target to build an object file
+ms.o:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/ms.o
 .PHONY : ms.o
 
-# target to build an object file
-ms.cpp.o:
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/ms.cpp.o
-.PHONY : ms.cpp.o
-
-ms.i: ms.cpp.i
-
+# target to preprocess a source file
+ms.i:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/ms.i
 .PHONY : ms.i
 
-# target to preprocess a source file
-ms.cpp.i:
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/ms.cpp.i
-.PHONY : ms.cpp.i
-
-ms.s: ms.cpp.s
-
+# target to generate assembly for a file
+ms.s:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/ms.s
 .PHONY : ms.s
 
-# target to generate assembly for a file
-ms.cpp.s:
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/ms.cpp.s
-.PHONY : ms.cpp.s
-
-msImageProcessor.o: msImageProcessor.cpp.o
-
+# target to build an object file
+msImageProcessor.o:
+	$(MAKE) -f CMakeFiles/processor.dir/build.make CMakeFiles/processor.dir/msImageProcessor.o
 .PHONY : msImageProcessor.o
 
-# target to build an object file
-msImageProcessor.cpp.o:
-	$(MAKE) -f CMakeFiles/processor.dir/build.make CMakeFiles/processor.dir/msImageProcessor.cpp.o
-.PHONY : msImageProcessor.cpp.o
-
-msImageProcessor.i: msImageProcessor.cpp.i
-
+# target to preprocess a source file
+msImageProcessor.i:
+	$(MAKE) -f CMakeFiles/processor.dir/build.make CMakeFiles/processor.dir/msImageProcessor.i
 .PHONY : msImageProcessor.i
 
-# target to preprocess a source file
-msImageProcessor.cpp.i:
-	$(MAKE) -f CMakeFiles/processor.dir/build.make CMakeFiles/processor.dir/msImageProcessor.cpp.i
-.PHONY : msImageProcessor.cpp.i
-
-msImageProcessor.s: msImageProcessor.cpp.s
-
+# target to generate assembly for a file
+msImageProcessor.s:
+	$(MAKE) -f CMakeFiles/processor.dir/build.make CMakeFiles/processor.dir/msImageProcessor.s
 .PHONY : msImageProcessor.s
 
-# target to generate assembly for a file
-msImageProcessor.cpp.s:
-	$(MAKE) -f CMakeFiles/processor.dir/build.make CMakeFiles/processor.dir/msImageProcessor.cpp.s
-.PHONY : msImageProcessor.cpp.s
-
-rlist.o: rlist.cpp.o
-
+# target to build an object file
+rlist.o:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/rlist.o
 .PHONY : rlist.o
 
-# target to build an object file
-rlist.cpp.o:
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/rlist.cpp.o
-.PHONY : rlist.cpp.o
-
-rlist.i: rlist.cpp.i
-
+# target to preprocess a source file
+rlist.i:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/rlist.i
 .PHONY : rlist.i
 
-# target to preprocess a source file
-rlist.cpp.i:
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/rlist.cpp.i
-.PHONY : rlist.cpp.i
-
-rlist.s: rlist.cpp.s
-
+# target to generate assembly for a file
+rlist.s:
+	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/rlist.s
 .PHONY : rlist.s
 
-# target to generate assembly for a file
-rlist.cpp.s:
-	$(MAKE) -f CMakeFiles/dependencies.dir/build.make CMakeFiles/dependencies.dir/rlist.cpp.s
-.PHONY : rlist.cpp.s
-
-test_segment.o: test_segment.cpp.o
-
+# target to build an object file
+test_segment.o:
+	$(MAKE) -f CMakeFiles/test_segment.dir/build.make CMakeFiles/test_segment.dir/test_segment.o
 .PHONY : test_segment.o
 
-# target to build an object file
-test_segment.cpp.o:
-	$(MAKE) -f CMakeFiles/test_segment.dir/build.make CMakeFiles/test_segment.dir/test_segment.cpp.o
-.PHONY : test_segment.cpp.o
-
-test_segment.i: test_segment.cpp.i
-
+# target to preprocess a source file
+test_segment.i:
+	$(MAKE) -f CMakeFiles/test_segment.dir/build.make CMakeFiles/test_segment.dir/test_segment.i
 .PHONY : test_segment.i
 
-# target to preprocess a source file
-test_segment.cpp.i:
-	$(MAKE) -f CMakeFiles/test_segment.dir/build.make CMakeFiles/test_segment.dir/test_segment.cpp.i
-.PHONY : test_segment.cpp.i
-
-test_segment.s: test_segment.cpp.s
-
-.PHONY : test_segment.s
-
 # target to generate assembly for a file
-test_segment.cpp.s:
-	$(MAKE) -f CMakeFiles/test_segment.dir/build.make CMakeFiles/test_segment.dir/test_segment.cpp.s
-.PHONY : test_segment.cpp.s
+test_segment.s:
+	$(MAKE) -f CMakeFiles/test_segment.dir/build.make CMakeFiles/test_segment.dir/test_segment.s
+.PHONY : test_segment.s
 
 # Help Target
 help:
@@ -317,14 +310,22 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... test_segment"
 	@echo "... edit_cache"
+	@echo "... dependencies"
+	@echo "... test_segment"
+	@echo "... call_segment"
 	@echo "... rebuild_cache"
 	@echo "... processor"
-	@echo "... dependencies"
+	@echo "... dir_segment"
 	@echo "... RAList.o"
 	@echo "... RAList.i"
 	@echo "... RAList.s"
+	@echo "... call_segment.o"
+	@echo "... call_segment.i"
+	@echo "... call_segment.s"
+	@echo "... dir_segmentation.o"
+	@echo "... dir_segmentation.i"
+	@echo "... dir_segmentation.s"
 	@echo "... loadImage.o"
 	@echo "... loadImage.i"
 	@echo "... loadImage.s"

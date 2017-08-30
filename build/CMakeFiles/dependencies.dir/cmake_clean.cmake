@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/dependencies.dir/ms.cpp.o"
-  "CMakeFiles/dependencies.dir/RAList.cpp.o"
-  "CMakeFiles/dependencies.dir/rlist.cpp.o"
-  "CMakeFiles/dependencies.dir/loadImage.cpp.o"
+  "CMakeFiles/dependencies.dir/ms.o"
+  "CMakeFiles/dependencies.dir/RAList.o"
+  "CMakeFiles/dependencies.dir/rlist.o"
+  "CMakeFiles/dependencies.dir/loadImage.o"
+  "CMakeFiles/dependencies.dir/dir_segmentation.o"
+  "CMakeFiles/dependencies.dir/call_segment.o"
   "libdependencies.pdb"
   "libdependencies.a"
 )
