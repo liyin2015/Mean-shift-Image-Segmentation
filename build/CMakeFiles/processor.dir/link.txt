@@ -1,0 +1,2 @@
+/usr/bin/ar qc libprocessor.a  CMakeFiles/processor.dir/msImageProcessor.cpp.o
+/usr/bin/ranlib libprocessor.a

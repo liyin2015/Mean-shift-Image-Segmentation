@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/test_segment.dir/test_segment.cpp.o  -o test_segment -rdynamic libprocessor.a libdependencies.a 

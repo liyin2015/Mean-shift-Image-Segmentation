@@ -1,0 +1,5 @@
+/home/liyin/edison_source/segm/build/CMakeFiles/test_segment.dir
+/home/liyin/edison_source/segm/build/CMakeFiles/edit_cache.dir
+/home/liyin/edison_source/segm/build/CMakeFiles/rebuild_cache.dir
+/home/liyin/edison_source/segm/build/CMakeFiles/processor.dir
+/home/liyin/edison_source/segm/build/CMakeFiles/dependencies.dir
